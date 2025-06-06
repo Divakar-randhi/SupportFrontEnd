@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Opex Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png'), #0e2a47;
+      font-family: 'Georgia', serif;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+    }
+
+    .header {
+      background-color: black;
+      color: white;
+      padding: 15px 50px;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-bottom: 70px;
+    }
+
+    .row {
+      display: flex;
+      gap: 60px;
+      margin-bottom: 80px;
+    }
+
+    .box {
+      background-color: black;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .oval-button {
+      background-color: black;
+      color: white;
+      padding: 20px 60px;
+      border-radius: 50% / 40%;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .oval-button:hover {
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Opex</div>
+
+    <div class="row">
+      <div class="box">Emp_ID</div>
+      <div class="box">Name</div>
+      <div class="box">Working_On</div>
+      <div class="box">Function</div>
+    </div>
+
+    <button class="oval-button">GetAll</button>
+  </div>
+</body>
+</html>
